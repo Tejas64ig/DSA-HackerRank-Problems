@@ -53,6 +53,19 @@ public class Insert_a_node_at_tail_of_LL {
      */
     static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
 
+     static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
+        if(head == null) {
+            head = new SinglyLinkedListNode(data);
+        } else {
+            SinglyLinkedListNode current = head;
+            while(current.next != null) {
+                current = current.next;
+            }
+            current.next = new SinglyLinkedListNode(data);
+        }
+        return head;
+    }
+
 
     }
 
@@ -87,3 +100,4 @@ public class Insert_a_node_at_tail_of_LL {
         scanner.close();
     }
 }
+
