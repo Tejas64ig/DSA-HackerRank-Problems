@@ -65,10 +65,7 @@ public class Insert_a_node_at_tail_of_LL {
         }
         return head;
     }
-
-
     }
-
     
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -100,4 +97,5 @@ public class Insert_a_node_at_tail_of_LL {
         scanner.close();
     }
 }
+
 
